@@ -7,7 +7,6 @@ public class dbBasicBilling : DbContext
             => options.UseSqlite(@"Data Source=dbBasicBilling.sqlite");
     
     public virtual DbSet<Bills> Bills { get; set; }
-    public virtual DbSet<Clients> Clients { get; set; }
-    public virtual DbSet<Services> Services { get; set; }
+    public virtual DbSet<Client> Clients { get; set; }
 
 }

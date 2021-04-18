@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 
-public class Clients{
-    public string ClientsId { get; set; }
+public class Client{
+    public string clientId { get; set; }
     public string Name { get; set; }
     public virtual ICollection<Bills> Bills { get; set; }
-    public Clients() {
+    public Client() {
         Bills = new List<Bills>();
     }
 }
